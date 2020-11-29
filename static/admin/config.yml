@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: justingorham/example-gatsby-netlify-cms
   branch: master
+  preview_context: deploy-preview
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -10,6 +12,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
